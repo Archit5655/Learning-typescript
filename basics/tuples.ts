@@ -16,7 +16,7 @@ const newuser:user=[2323,"cadc@adv"]
 
 newuser[1]="aisuhfuiew@sakdbcoa"
 
-newuser.push(true)
+// newuser.push(true)
 
 
 export{}
