@@ -12,7 +12,9 @@
 //   }
 // }
 class User {
-  private _courseno = 23;
+  // private _courseno = 23;
+  // protected access specifier can be used in same class and inherited class
+  protected _courseno = 23;
   constructor(
     public email: string,
     public name: string,
@@ -40,4 +42,20 @@ class User {
     this._courseno = course;
   }
 }
+class Subuser extends User{
+  // inheritance 
+  // this can not aquire private methods
+
+isFamily:boolean=true;
+changecourseno(){
+  this._courseno=22;
+  
+
+}
+
+}
+
+
+
+
 const hitesh = new User("Architrdc@sdvd", "Hitesh", "2ewds");
