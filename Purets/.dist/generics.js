@@ -26,3 +26,17 @@ const getmoreproducts = (products) => {
     const index = 34;
     return products[index];
 };
+function hey(val1, val2) {
+    return {
+        val1,
+        val2
+    };
+}
+class sell {
+    constructor() {
+        this.cart = [];
+    }
+    addtocart(products) {
+        this.cart.push(products);
+    }
+}

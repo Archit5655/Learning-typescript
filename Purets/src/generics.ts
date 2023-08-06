@@ -49,4 +49,40 @@ const getmoreproducts=<T>(products: number[]): number=>{
     return products[index]
 }
 
+interface database{
+    connection:string,
+    username:string,
+    password:string
+}
 
+function hey<T,U extends database>( val1:T,val2:U):{}{
+    return {
+        val1,
+        val2
+    }
+
+
+}
+// hey(3,{})
+
+interface quiz{
+    name:string,
+    type:string,
+
+}
+interface course{
+
+name:string,
+author:string,
+subject:string
+
+}
+
+class sell<T>{
+    public cart:T[]=[] 
+
+addtocart(products:T){
+    this.cart.push(products)
+}
+
+}
